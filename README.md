@@ -1,5 +1,5 @@
 
-Biblioteki, ktore zostaly uzyte w programie: 
+Biblioteki, ktore zostaly uzyte w programie: <br />
 -FreeGlut - http://freeglut.sourceforge.net/ 
 -OpenGL Extension Wrangler Library (GLEW) - http://glew.sourceforge.net/ 
 -OpenGL Mathematics (GLM) - http://glm.g-truc.net/ 
