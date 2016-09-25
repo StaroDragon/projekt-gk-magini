@@ -109,6 +109,10 @@ artifacts/
 *.svclog
 *.scc
 
+!Data
+!Data/*
+!Data/**/*.obj
+
 # Chutzpah Test files
 _Chutzpah*
 
@@ -305,3 +309,4 @@ __pycache__/
 
 ### VisualStudio Patch ###
 build/
+
