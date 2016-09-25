@@ -48,8 +48,11 @@ public:
 
 
 private:
-	glm::vec3 m_pos; //!Pozycja kamery
-	glm::vec3 m_target;//! Gdzie jest skierowana kamera
-	glm::vec3 m_up; //! Wskaznik "gory"
+	//!Pozycja kamery
+	glm::vec3 m_pos; 
+	//! Gdzie jest skierowana kamera
+	glm::vec3 m_target;
+	//! Wskaznik "gory"
+	glm::vec3 m_up; 
 };
 #endif

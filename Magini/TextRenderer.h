@@ -8,7 +8,9 @@
 #include "TextShader.h"
 
 
-
+/**
+*Struktura przechowujaca informacje o znaku.
+*/
 struct Character {
 	GLuint TextureID;   
 	glm::ivec2 Size;    
@@ -22,8 +24,10 @@ struct Character {
 class TextRenderer
 {
 public:
-	std::map<GLchar, Character> Characters; //!Mapa znakow
-	TextShader shader;//!Shader tekstu
+	//!Mapa znakow
+	std::map<GLchar, Character> Characters; 
+	//!Shader tekstu
+	TextShader shader;
 	/**
 	*Konstruktor
 	*/

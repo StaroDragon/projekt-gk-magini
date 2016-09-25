@@ -11,19 +11,27 @@
 class Pipeline
 {
 private:
-	glm::vec3 m_scale; //! Skala
-	glm::vec3 m_rotation_axis; //! Os obrotu
-	float m_rotation_degrees; //! Stopien obrotu
-	glm::vec3 m_position; //!Pozycja
-	glm::mat4 m_modelMatrix; //!Macierz modelu
+	//!Skala
+	glm::vec3 m_scale; 
+	//!Os obrotu
+	glm::vec3 m_rotation_axis;
+	//! Stopien obrotu 
+	float m_rotation_degrees; 
+	//!Pozycja
+	glm::vec3 m_position; 
+	//!Macierz modelu
+	glm::mat4 m_modelMatrix; 
+	//!Macierz perspektywy
+	glm::mat4 m_perspectiveMatrix; 
+	//!Informacje o perspektywie
+	PerspectiveInfo m_perspectiveInfo; 
+	//!Macierz widoku
+	glm::mat4 m_viewMatrix; 
+	//!Kamera
+	Camera m_cameraInfo; 
 
-	glm::mat4 m_perspectiveMatrix; //!Macierz perspektywy
-	PerspectiveInfo m_perspectiveInfo; //!Informacje o perspektywie
-
-	glm::mat4 m_viewMatrix; //!Macierz widoku
-	Camera m_cameraInfo; //Kamera
-
-	glm::mat4 m_pvMatrix; //Macierz perspektywy i widoku.
+	//!Macierz perspektywy i widoku.
+	glm::mat4 m_pvMatrix; 
 
 
 public:

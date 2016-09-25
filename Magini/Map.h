@@ -22,9 +22,9 @@ private:
 	std::vector<Object*> staticObjects; //! Wektor przechowujacy informacje o obiektach statycznych
 	/**
 	*Metoda odpowiedzialna za zczytywanie pozycji obiektow dynamicznych z pliku i konwertowanie ich na obiekty w programie z odpowiednia pozycja.
-	@param[out] player zwracany obiekt gracza.
-	@param[out] endpoint zwracany punkt koncowy mapy.
-	@param[out] enemies zwracany wektor wypelniony wrogami znajdujacymi sie na mapie.
+	*@param[out] player zwracany obiekt gracza.
+	*@param[out] endpoint zwracany punkt koncowy mapy.
+	*@param[out] enemies zwracany wektor wypelniony wrogami znajdujacymi sie na mapie.
 	*/
 	void CreateMapObjects(Object* player, Object* endpoint, std::vector<Object*> &enemies);
 public:

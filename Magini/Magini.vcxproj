@@ -73,6 +73,7 @@
     <PostBuildEvent>
       <Command>robocopy "$(SolutionDir)Extern\DLL" "$(SolutionDir)$(Configuration)"
 robocopy "$(SolutionDir)Data" "$(SolutionDir)$(Configuration)\Data" /E 
+robocopy "$(SolutionDir)$(ProjectName)" "$(SolutionDir)$(Configuration)" *.vs *.fs
 IF %ERRORLEVEL% LEQ 4 exit /B 0
 </Command>
     </PostBuildEvent>
@@ -101,6 +102,7 @@ IF %ERRORLEVEL% LEQ 4 exit /B 0
     <PostBuildEvent>
       <Command>robocopy "$(SolutionDir)Extern\DLL" "$(SolutionDir)$(Configuration)"
 robocopy "$(SolutionDir)Data" "$(SolutionDir)$(Configuration)\Data" /E 
+robocopy "$(SolutionDir)$(ProjectName)" "$(SolutionDir)$(Configuration)" *.vs *.fs
 IF %ERRORLEVEL% LEQ 4 exit /B 0
 </Command>
     </PostBuildEvent>

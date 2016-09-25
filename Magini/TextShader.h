@@ -5,7 +5,7 @@
 #include "Shader.h"
 
 /**
-*Shader odpowiedizalny za wyswietlanie tekstu
+*Shader odpowiedzialny za wyswietlanie tekstu
 */
 class TextShader : public Shader
 {

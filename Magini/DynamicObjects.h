@@ -17,12 +17,16 @@
 class DynamicObject: public Object
 {
 protected:
-	float xv;//!Predkosc pozioma
-	float yv;//!Predkosc pionowa
-	int direction;//!Zwrot
-
-	bool canJump;//!Czy obiekt potrafi podskoczyc
-	bool walking;//!Czy obiekt znajduje sie obecnie w ruchu
+	//!Predkosc pozioma
+	float xv;
+	//!Predkosc pionowa
+	float yv;
+	//!Zwrot
+	int direction;
+	//!Czy obiekt potrafi podskoczyc
+	bool canJump;
+	//!Czy obiekt znajduje sie obecnie w ruchu
+	bool walking;
 
 	/**
 	*Metoda do wykrywania kolizji z obiektami statycznymi

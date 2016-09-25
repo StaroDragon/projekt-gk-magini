@@ -18,15 +18,22 @@
 class Player :public DynamicObject
 {
 private:
-	Mesh* mesh; //!Mesh gracza
-	Camera* camera; //! Kamera
-	PerspectiveInfo perspective; //! Informacje o perspektywie
+	//!Mesh gracza
+	Mesh* mesh; 
+	//!Kamera
+	Camera* camera; 
+	//! Informacje o perspektywie
+	PerspectiveInfo perspective; 
 
-	float invuTime; //!Pozostaly czas nietykalnosci
-	bool invu; //!Czy gracz jest nietykalny
-	int hitpoints; //!Ilosc punktow zycia gracza
+	//!Pozostaly czas nietykalnosci
+	float invuTime; 
+	//!Czy gracz jest nietykalny
+	bool invu; 
+	//!Ilosc punktow zycia gracza
+	int hitpoints; 
 
-	int gameState; //!Jaki jest stan gry (zakonczony/nieudany)
+	//!Jaki jest stan gry (zakonczony/nieudany)
+	int gameState; 
 	
 	/**
 	*Metoda ktora koryguje kamere do pozycji gracza
@@ -45,6 +52,14 @@ public:
 	~Player();
 	void Render(std::vector<Shader*> shaders, glm::mat4 VP);
 	void ChangePosition(float x, float y, float z);
+	/**
+	*Metoda odpowiedzialna za przetwarzanie zmian i sprawdzanie kolizji gracza.
+	*@param map mapa rozgrywyki
+	*@param endpoint obiekt punktu koncowego
+	*@param enemies wektor przeciwnikow
+	*@param deltaTime delta time do zapewnienia niezaleznosci od fps
+	*@param textRenderer wyswietlacz tekstu.
+	*/
 	void ProcessChange(Map map, Object* endpoint, std::vector<Object*> enemies, int deltaTime,TextRenderer *textRenderer);
 	Camera GetCamera();
 	PerspectiveInfo GetPerspective();

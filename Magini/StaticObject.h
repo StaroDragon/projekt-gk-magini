@@ -17,9 +17,12 @@
 class BasicTile : public Object
 {
 protected:
-	GLuint VB;//!Vertex buffer
-	GLuint IB;//!Index buffer
-	Texture* texture;//!Tekstura
+	//!Vertex buffer
+	GLuint VB;
+	//!Index buffer
+	GLuint IB;
+	//!Tekstura
+	Texture* texture;
 public:
 	BasicTile(float x, float y, float z);
 	virtual void Render(std::vector<Shader*> shaders, glm::mat4 VP);
