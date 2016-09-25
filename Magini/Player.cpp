@@ -62,7 +62,7 @@ void Player::Render(std::vector<Shader*> shaders, glm::mat4 VP)
 	shader->Enable();
 	shader->SetMVP(p.GetMVPTranslation(VP));
 	mesh->Render();
-	this->DrawBox(x, x + width, y, y + height, z, z + TILE_DEPTH, shaders, VP);
+	//this->DrawBox(x, x + width, y, y + height, z, z + TILE_DEPTH, shaders, VP);
 }
 
 void Player::AdjustCamera()
